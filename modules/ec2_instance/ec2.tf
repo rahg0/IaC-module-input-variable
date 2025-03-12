@@ -8,7 +8,6 @@ data "aws_ami" "amzn-linux-2023-ami" {
   }
 }
 
-
 resource "aws_instance" "Web-Server01" {
   ami           = "ami-005e54dee72cc1d00"
   instance_type = "t2.micro"
